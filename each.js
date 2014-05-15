@@ -21,7 +21,7 @@ var continueIndicating = function(array, n, fn) {
 };
 
 var startIndicatingFruitThatNeedsPurchasing = function(array) {
-  continueIndicatingFruitThatNeedsPurchasing(array, 0);
+  continueIndicating(array, 0, indicateFruitThatNeedsPurchasing);
 };
 
 var startIndicatingFruitPurchased = function(array) {
