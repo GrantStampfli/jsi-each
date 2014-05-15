@@ -6,7 +6,7 @@ var indicateFruitPurchased = function(fruit) {
   console.log("I purchased " + fruit + " today.");
 };
 
-var startIndicating = function(array, fn) {
+var each = function(array, fn) {
   var continueIndicating = function(array, n, fn) {
     if (n < array.length) {
       fn(array[n]);
@@ -17,5 +17,5 @@ var startIndicating = function(array, fn) {
 };
 
 var fruits = ['apples', 'oranges', 'bananas'];
-startIndicating(fruits, indicateFruitThatNeedsPurchasing);
-startIndicating(fruits, indicateFruitPurchased);
+each(fruits, indicateFruitThatNeedsPurchasing);
+each(fruits, indicateFruitPurchased);
