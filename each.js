@@ -23,4 +23,4 @@ var startIndicatingFruitPurchased = function(array, fn) {
 
 var fruits = ['apples', 'oranges', 'bananas'];
 startIndicatingFruitThatNeedsPurchasing(fruits);
-startIndicatingFruitPurchased(fruits);
+startIndicatingFruitPurchased(fruits, indicateFruitPurchased);
