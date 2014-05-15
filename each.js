@@ -6,13 +6,6 @@ var indicateFruitPurchased = function(fruit) {
   console.log("I purchased " + fruit + " today.");
 };
 
-var continueIndicatingFruitThatNeedsPurchasing = function(array, n) {
-  if (n < array.length) {
-    indicateFruitThatNeedsPurchasing(array[n]);
-    continueIndicatingFruitThatNeedsPurchasing(array, n+1);
-  }
-};
-
 var continueIndicating = function(array, n, fn) {
   if (n < array.length) {
     fn(array[n]);
