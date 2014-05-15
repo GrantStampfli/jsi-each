@@ -1,11 +1,3 @@
-var indicateFruitThatNeedsPurchasing = function(fruit) {
-  console.log("I need to purchase " + fruit + ".");
-};
-
-var indicateFruitPurchased = function(fruit) {
-  console.log("I purchased " + fruit + " today.");
-};
-
 var each = function(array, fn) {
   var continueIterating = function(array, n, fn) {
     if (n < array.length) {
@@ -17,5 +9,11 @@ var each = function(array, fn) {
 };
 
 var fruits = ['apples', 'oranges', 'bananas'];
-each(fruits, indicateFruitThatNeedsPurchasing);
-each(fruits, indicateFruitPurchased);
+
+each(fruits, function(fruit) {
+  console.log("I need to purchase " + fruit + ".");
+});
+
+each(fruits, function(fruit) {
+  console.log("I purchased " + fruit + " today.");
+});
