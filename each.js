@@ -13,10 +13,6 @@ var continueIndicating = function(array, n, fn) {
   }
 };
 
-var startIndicatingFruitThatNeedsPurchasing = function(array) {
-  continueIndicating(array, 0, indicateFruitThatNeedsPurchasing);
-};
-
 var startIndicating = function(array, fn) {
   continueIndicating(array, 0, fn);
 };
