@@ -6,14 +6,13 @@ var indicateFruitPurchased = function(fruit) {
   console.log("I purchased " + fruit + " today.");
 };
 
-var continueIndicating = function(array, n, fn) {
-  if (n < array.length) {
-    fn(array[n]);
-    continueIndicating(array, n+1, fn);
-  }
-};
-
 var startIndicating = function(array, fn) {
+  var continueIndicating = function(array, n, fn) {
+    if (n < array.length) {
+      fn(array[n]);
+      continueIndicating(array, n+1, fn);
+    }
+  };
   continueIndicating(array, 0, fn);
 };
 
