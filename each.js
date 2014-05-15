@@ -17,8 +17,8 @@ var startIndicatingFruitThatNeedsPurchasing = function(array) {
   continueIndicating(array, 0, indicateFruitThatNeedsPurchasing);
 };
 
-var startIndicatingFruitPurchased = function(array) {
-  continueIndicating(array, 0, indicateFruitPurchased);
+var startIndicatingFruitPurchased = function(array, fn) {
+  continueIndicating(array, 0, fn);
 };
 
 var fruits = ['apples', 'oranges', 'bananas'];
