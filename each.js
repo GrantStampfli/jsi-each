@@ -16,7 +16,7 @@ var continueIndicatingFruitThatNeedsPurchasing = function(array, n) {
 var continueIndicatingFruitPurchased = function(array, n, fn) {
   if (n < array.length) {
     fn(array[n]);
-    continueIndicatingFruitPurchased(array, n+1, indicateFruitPurchased);
+    continueIndicatingFruitPurchased(array, n+1, fn);
   }
 };
 
