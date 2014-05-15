@@ -16,7 +16,7 @@ var continueIndicatingFruitThatNeedsPurchasing = function(array, n) {
 var continueIndicatingFruitPurchased = function(array, n, fn) {
   if (n < array.length) {
     fn(array[n]);
-    continueIndicatingFruitPurchased(array, n+1);
+    continueIndicatingFruitPurchased(array, n+1, indicateFruitPurchased);
   }
 };
 
@@ -25,7 +25,7 @@ var startIndicatingFruitThatNeedsPurchasing = function(array) {
 };
 
 var startIndicatingFruitPurchased = function(array) {
-  continueIndicatingFruitPurchased(array, 0);
+  continueIndicatingFruitPurchased(array, 0, indicateFruitPurchased);
 };
 
 var fruits = ['apples', 'oranges', 'bananas'];
