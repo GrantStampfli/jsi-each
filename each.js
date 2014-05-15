@@ -17,10 +17,10 @@ var startIndicatingFruitThatNeedsPurchasing = function(array) {
   continueIndicating(array, 0, indicateFruitThatNeedsPurchasing);
 };
 
-var startIndicatingFruitPurchased = function(array, fn) {
+var startIndicating = function(array, fn) {
   continueIndicating(array, 0, fn);
 };
 
 var fruits = ['apples', 'oranges', 'bananas'];
 startIndicatingFruitThatNeedsPurchasing(fruits);
-startIndicatingFruitPurchased(fruits, indicateFruitPurchased);
+startIndicating(fruits, indicateFruitPurchased);
