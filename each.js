@@ -7,13 +7,13 @@ var indicateFruitPurchased = function(fruit) {
 };
 
 var each = function(array, fn) {
-  var continueIndicating = function(array, n, fn) {
+  var continueIterating = function(array, n, fn) {
     if (n < array.length) {
       fn(array[n]);
-      continueIndicating(array, n+1, fn);
+      continueIterating(array, n+1, fn);
     }
   };
-  continueIndicating(array, 0, fn);
+  continueIterating(array, 0, fn);
 };
 
 var fruits = ['apples', 'oranges', 'bananas'];
